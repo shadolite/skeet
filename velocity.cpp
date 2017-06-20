@@ -31,7 +31,7 @@ float Velocity::getDy()
  * setDx
  *
  *****************************************/
-void Velocity::setDx(const float Dx)
+void Velocity::setDx(float Dx)
 {
    this->Dx = Dx;
 }
@@ -40,7 +40,7 @@ void Velocity::setDx(const float Dx)
  * setDy
  *
  *****************************************/
-void Velocity::setDy(const float Dy)
+void Velocity::setDy(float Dy)
 {
    this->Dy = Dy;
 }

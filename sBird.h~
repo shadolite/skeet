@@ -1,22 +1,23 @@
 /*************************************************************
- * File: tBird.h
+ * File: sBird.h
  * Author: Amy Chambers
  *
- * Description: Defines tBird
+ * Description: Defines sBird
  *************************************************************/
 
-#ifndef TBIRD_H
-#define TBIRD_H
+#ifndef SBIRD_H
+#define SBIRD__H
 
 #include "bird.h"
 
-class tBird : public Bird
+
+class sBird : Bird
 {
 private:
 
    
 public:
-   tBird();
+   sBird();
    void draw();
 };
 

@@ -9,6 +9,8 @@
  ******************************************************/
 #include "game.h"
 #include "uiInteract.h"
+#include "bullet.h"
+#include "bird.h"
 
 /*************************************
  * All the interesting work happens here, when

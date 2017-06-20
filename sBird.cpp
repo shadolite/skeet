@@ -1,15 +1,16 @@
 /*************************************************************
- * File: bird.cpp
+ * File: sBird.cpp
  * Author: Amy Chambers
  *
- * Description: Contains the function bodies for Bird
+ * Description: Contains the function bodies for the
+ * Sacred Bird
  *************************************************************/
 
-#include "bird.h"
+#include "sBird.h"
 
 #include <cassert>
 
-Bird :: Bird() 
+sBird :: sBird()
 {
    point.setX(-200);
    point.setY(random(-200, 200));
@@ -21,18 +22,12 @@ Bird :: Bird()
    {
       velocity.setDy(random(1, 4));
    }
-   getVelocity().setDx(random(3, 6));
    velocity.setDx(random(3, 6));
    hp = 1;
-   points = 1;
+   points = -10;
 }
 
-void Bird :: draw()
+void sBird :: draw() 
 {
-   drawCircle(point, BIRD_SIZE);
-}
-
-int Bird :: hit()
-{
-   return points;
+   drawSacredBird(point, BIRD_SIZE);
 }

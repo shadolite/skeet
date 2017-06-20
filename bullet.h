@@ -1,30 +1,26 @@
 /*************************************************************
- * File: CLASS.h
+ * File: bullet.h
  * Author: Amy Chambers
  *
- * Description: Defines CLASS
+ * Description: Defines Bullet
  *************************************************************/
 
-#ifndef CLASS_H
-#define CLASS_H
+#ifndef BULLET_H
+#define BULLET_H
 
-#include "point.h"
+#define BULLET_SPEED 10.0
 
-#define CLASS_WIDTH 5
-#define CLASS_HEIGHT 40
+#include "flyingObject.h"
 
-#define ANGLE_MAX 90
-#define ANGLE_MIN 0
-#define ANGLE_START 45
-
-#define RIFLE_MOVE_AMOUNT 3
-
-class CLASS
+class Bullet : public FlyingObject
 {
 private:
 
    
 public:
+   Bullet();
+   void fire(const Point point, const float angle);
+   void draw();
    
 };
 

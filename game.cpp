@@ -16,6 +16,11 @@
 #include "uiInteract.h"
 #include "point.h"
 
+#include "bullet.h"
+#include "bird.h"
+#include "tBird.h"
+#include "sBird.h"
+
 #include <vector>
 using namespace std;
 
@@ -32,6 +37,7 @@ Game :: Game(Point tl, Point br)
    score = 0;
 
    // TODO: Set your bird pointer to a good initial value (e.g., NULL)
+   bird = NULL;
 
 }
 
@@ -42,7 +48,11 @@ Game :: ~Game()
 {
    // TODO: Check to see if there is currently a bird allocated
    //       and if so, delete it.
-
+   if (bird != NULL)
+   {
+      delete bird;
+      bird = NULL;
+   }
 }
 
 /***************************************
@@ -128,9 +138,23 @@ void Game :: advanceBird()
 Bird* Game :: createBird()
 {
    Bird* newBird = NULL;
-
-   // TODO: Fill this in
+   int type;
    
+   // TODO: Fill this in//random functions
+   type = random(1, 3);
+
+   switch(type)
+   {
+      case '1':
+         newBird = new Bird;
+         break;
+      case '2':
+         newBird = new tBird;
+         break;
+      case '3':
+         newBird = new sBird;
+         break;
+   };
    
    return newBird;
 }
@@ -195,7 +219,8 @@ void Game :: cleanUpZombies()
       // the bird is dead, but the memory is not freed up yet
       
       // TODO: Clean up the memory used by the bird
-   
+      delete bird;
+      bird = NULL;
    
    }
    
@@ -261,8 +286,7 @@ void Game :: draw(const Interface & ui)
 
    // TODO: Check if you have a valid bird and if it's alive
    // then call it's draw method
-   
-  
+   bird->draw();
 
    // draw the rifle
    rifle.draw();

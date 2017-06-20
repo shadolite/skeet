@@ -30,8 +30,8 @@ public:
    float getDy();
 
    //setters
-   void setDx(float);
-   void setDy(float);
+   void setDx(float Dx);
+   void setDy(float Dy);
 };
 
 #endif

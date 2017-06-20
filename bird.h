@@ -1,31 +1,26 @@
 /*************************************************************
- * File: CLASS.h
+ * File: bird.h
  * Author: Amy Chambers
  *
- * Description: Defines CLASS
+ * Description: Defines Bird
  *************************************************************/
 
-#ifndef CLASS_H
-#define CLASS_H
+#ifndef BIRD_H
+#define BIRD_H
+#define BIRD_SIZE 15
+#include "flyingObject.h"
 
-#include "point.h"
-
-#define CLASS_WIDTH 5
-#define CLASS_HEIGHT 40
-
-#define ANGLE_MAX 90
-#define ANGLE_MIN 0
-#define ANGLE_START 45
-
-#define RIFLE_MOVE_AMOUNT 3
-
-class CLASS
+class Bird : public FlyingObject
 {
-private:
-
+protected:
+   int hp;
+   int points;
    
 public:
-   
+   Bird();
+   virtual void draw();
+   int hit();
+
 };
 
 #endif

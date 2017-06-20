@@ -1,0 +1,33 @@
+/*************************************************************
+ * File: flyingObject.h
+ * Author: Amy Chambers
+ *
+ * Description: Defines FlyingObject
+ *************************************************************/
+
+#ifndef FLYINGOBJECT_H
+#define FLYINGOBJECT_H
+
+#include "point.h"
+#include "velocity.h"
+#include "uiDraw.h"
+
+class FlyingObject 
+{
+protected:
+   Point point;
+   Velocity velocity;
+   bool alive;
+   
+public:
+   Velocity getVelocity() const;
+   void setVelocity(Velocity);
+   Point getPoint() const;
+   void setPoint(Point);
+   void kill();
+   bool isAlive();
+
+   void advance();
+};
+
+#endif
