@@ -5,7 +5,7 @@
 # Author:
 #     Amy Chambers
 # Summary:
-#     Milestone for 08 Skeet 
+#     Final Skeet program 
 # Above and Beyond
 #     When you submit your final project (not for milestones),
 #     list anything here that you did to go above and beyond
