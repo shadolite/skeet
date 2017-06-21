@@ -31,3 +31,17 @@ void tBird :: draw()
 {
    drawToughBird(point, BIRD_SIZE, hp);
 }
+
+int tBird::hit()
+{
+	if (hp != 1)
+	{ 
+		--hp;
+		return points;
+	}
+	else
+	{
+		kill();
+		return points + 2;
+	}
+}

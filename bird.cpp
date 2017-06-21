@@ -35,14 +35,6 @@ void Bird :: draw()
 
 int Bird :: hit()
 {
-	if (hp != 1)
-	{
-		--hp;
-		return points;
-	}
-	else
-	{
-		kill();
-		return points + 1;
-	}
+	kill();
+	return points;
 }

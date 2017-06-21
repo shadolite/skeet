@@ -141,12 +141,13 @@ Bird* Game :: createBird()
    int type;
    
    // TODO: Fill this in
-   type = random(1, 3);
+   type = random(1, 4);
 
    switch(type)
    {
       case 1:
          newBird = new Bird;
+	  case 4:
          break;
       case 2:
          newBird = new tBird;

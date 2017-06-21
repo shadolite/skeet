@@ -17,7 +17,8 @@ private:
    
 public:
    tBird();
-   void draw();
+   virtual void draw();
+   virtual int hit();
 };
 
 #endif
