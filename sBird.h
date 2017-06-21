@@ -19,6 +19,7 @@ private:
 public:
    sBird();
    void draw();
+   virtual int hit();
 };
 
 #endif

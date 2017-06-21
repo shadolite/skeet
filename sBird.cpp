@@ -32,3 +32,9 @@ void sBird :: draw()
 {
    drawSacredBird(point, BIRD_SIZE);
 }
+
+int sBird::hit()
+{
+	kill();
+	return points;
+}

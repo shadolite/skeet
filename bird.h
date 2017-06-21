@@ -19,7 +19,7 @@ protected:
 public:
    Bird();
    virtual void draw();
-   int hit();
+   virtual int hit();
 
 };
 
