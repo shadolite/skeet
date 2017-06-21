@@ -7,9 +7,7 @@
 # Summary:
 #     Final Skeet program 
 # Above and Beyond
-#     When you submit your final project (not for milestones),
-#     list anything here that you did to go above and beyond
-#     the base requirements for your project.
+#     Made normal birds slightly more common than others.
 ###############################################################
 
 
