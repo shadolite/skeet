@@ -25,6 +25,7 @@ Bird :: Bird()
    velocity.setDx(random(3, 6));
    hp = 1;
    points = 1;
+   alive = true;
 }
 
 void Bird :: draw()

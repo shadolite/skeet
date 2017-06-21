@@ -46,9 +46,9 @@ Game :: Game(Point tl, Point br)
  ****************************************/
 Game :: ~Game()
 {
-   // TODO: Check to see if there is currently a bird allocated
+   //TODO: Check to see if there is currently a bird allocated
    //       and if so, delete it.
-   if (bird != NULL)
+    if (bird != NULL)
    {
       delete bird;
       bird = NULL;
@@ -140,7 +140,7 @@ Bird* Game :: createBird()
    Bird* newBird = NULL;
    int type;
    
-   // TODO: Fill this in//random functions
+   // TODO: Fill this in
    type = random(1, 3);
 
    switch(type)
@@ -286,8 +286,11 @@ void Game :: draw(const Interface & ui)
 
    // TODO: Check if you have a valid bird and if it's alive
    // then call it's draw method
-   bird->draw();
-
+   if (bird->isAlive() && bird != NULL)
+   {
+      bird->draw();
+   }
+   
    // draw the rifle
    rifle.draw();
    

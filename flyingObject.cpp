@@ -1,14 +1,11 @@
 /*************************************************************
- * File: CLASS.cpp
+ * File: flyingObject.cpp
  * Author: Amy Chambers
  *
- * Description: Contains the function bodies CLASS
+ * Description: Contains the function bodies for flyingObject
  *************************************************************/
 
 #include "flyingObject.h"
-#include "point.h"
-#include "velocity.h"
-#include "uiDraw.h"
 
 #include <cassert>
 
@@ -34,7 +31,7 @@ void FlyingObject :: setPoint(Point point)
 
 void FlyingObject :: kill()
 {
-
+   alive = false;
 }
 
 bool FlyingObject :: isAlive()

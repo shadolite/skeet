@@ -14,14 +14,10 @@
 
 class Bullet : public FlyingObject
 {
-private:
-
-   
 public:
    Bullet();
    void fire(const Point point, const float angle);
    void draw();
-   
 };
 
 #endif

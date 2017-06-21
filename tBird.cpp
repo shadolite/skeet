@@ -24,6 +24,7 @@ tBird :: tBird()
    velocity.setDx(random(2, 4));
    hp = 3;
    points = 1;
+   alive = true;
 }
 
 void tBird :: draw() 

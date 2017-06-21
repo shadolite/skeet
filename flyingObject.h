@@ -26,7 +26,6 @@ public:
    void setPoint(Point point);
    void kill();
    bool isAlive();
-
    void advance();
 };
 

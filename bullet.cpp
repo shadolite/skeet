@@ -14,6 +14,7 @@ Bullet :: Bullet()
 {
    point.setX(200);
    point.setY(-200);
+   alive = true;
 };
 
 void Bullet :: fire(const Point point, const float angle) 
