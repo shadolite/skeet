@@ -1,0 +1,6 @@
+﻿  game.cpp
+c:\users\joseph\desktop\cs 165\project\skeet\skeet\game.cpp(78): warning C4018: '<': signed/unsigned mismatch
+c:\users\joseph\desktop\cs 165\project\skeet\skeet\game.cpp(181): warning C4018: '<': signed/unsigned mismatch
+c:\users\joseph\desktop\cs 165\project\skeet\skeet\game.cpp(300): warning C4018: '<': signed/unsigned mismatch
+  skeet.vcxproj -> C:\Users\Joseph\Desktop\CS 165\project\skeet\Debug\skeet.exe
+  skeet.vcxproj -> C:\Users\Joseph\Desktop\CS 165\project\skeet\Debug\skeet.pdb (Partial PDB)

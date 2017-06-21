@@ -6,7 +6,7 @@
  *************************************************************/
 
 #ifndef SBIRD_H
-#define SBIRD__H
+#define SBIRD_H
 
 #include "bird.h"
 

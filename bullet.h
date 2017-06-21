@@ -9,6 +9,7 @@
 #define BULLET_H
 
 #define BULLET_SPEED 10.0
+#define _USE_MATH_DEFINES
 
 #include "flyingObject.h"
 

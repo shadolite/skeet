@@ -21,11 +21,12 @@
 #include "point.h"
 #include "velocity.h"
 #include "rifle.h"
-#include "bullet.h"
-#include "bird.h"
 
 // TODO: include your bullet and bird classes
-
+#include "sBird.h"
+#include "tBird.h"
+#include "bullet.h"
+#include "bird.h"
 
 #define CLOSE_ENOUGH 15
 

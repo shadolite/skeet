@@ -145,17 +145,17 @@ Bird* Game :: createBird()
 
    switch(type)
    {
-      case '1':
+      case 1:
          newBird = new Bird;
          break;
-      case '2':
+      case 2:
          newBird = new tBird;
          break;
-      case '3':
+      case 3:
          newBird = new sBird;
          break;
    };
-   
+
    return newBird;
 }
 
@@ -286,10 +286,12 @@ void Game :: draw(const Interface & ui)
 
    // TODO: Check if you have a valid bird and if it's alive
    // then call it's draw method
-   if (bird->isAlive() && bird != NULL)
-   {
-      bird->draw();
-   }
+	if (bird != NULL && bird->isAlive())
+	{
+		bird->draw();
+	}
+	else
+		createBird();
    
    // draw the rifle
    rifle.draw();
